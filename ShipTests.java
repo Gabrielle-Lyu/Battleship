@@ -10,16 +10,26 @@ public class ShipTests {
     @BeforeEach
     public void init(){
         battleship = new Battleship();
+        cruiser = new Cruiser();
+        submarine = new Submarine();
+        destroyer = new Destroyer();
     }
 
     @Test
-    void testBattleshipConstructor(){
+    void testConstructors(){
         assertEquals(4,battleship.getLength(),"Battleship length should be 4");
+        assertEquals(3,cruiser.getLength(),"Cruiser length should be 3");
+        assertEquals(2,destroyer.getLength(),"Destroyer length should be 2");
+        assertEquals(1,submarine.getLength(),"Submarine length should be 1");
+
     }
 
     @Test
     void testGetShipType(){
         assertEquals("Battleship", battleship.getShipType(), "getShipType should return 'Battleship'");
+        assertEquals("Cruiser", cruiser.getShipType(), "getShipType should return 'Cruiser'");
+        assertEquals("Destroyer", destroyer.getShipType(), "getShipType should return 'Destroyer'");
+        assertEquals("Submarine", submarine.getShipType(), "getShipType should return 'Submarine'");
     }
 
     @Test
