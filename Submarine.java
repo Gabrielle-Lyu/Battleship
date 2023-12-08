@@ -1,5 +1,7 @@
 public class Submarine extends Ship{
 //    Constructor
-    Submarine(){ }
+    Submarine(){
+        this.length = 1;
+    }
     String getShipType(){ return "Submarine"; }
 }
