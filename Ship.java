@@ -16,7 +16,7 @@ public abstract class Ship {
     int getLength(){ return length; }
 
     abstract String getShipType();
-    boolean isHorizontal(){ return false; }
+    boolean isHorizontal(){ return horizontal; }
     boolean isSunk(){ return false; }
     boolean okToPlaceShipAt(int row, int column, boolean horizontal, Ocean ocean){ return false; }
     void placeShipAt(int row, int column, boolean horizontal, Ocean ocean){ }
