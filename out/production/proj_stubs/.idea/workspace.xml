@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0968bfaf-43e6-41e2-afa0-01fd87e5b00b" name="Changes" comment="" />
+    <list default="true" id="ed803070-3e23-48d4-8c6e-8835c8730c04" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/OceanTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj_stubs/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj_stubs/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj_stubs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj_stubs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj_stubs/Battleship.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj_stubs/Battleship.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj_stubs/BattleshipGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj_stubs/BattleshipGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj_stubs/Cruiser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj_stubs/Cruiser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj_stubs/Destroyer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj_stubs/Destroyer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj_stubs/EmptySea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj_stubs/EmptySea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj_stubs/Ocean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj_stubs/Ocean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj_stubs/OceanInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj_stubs/OceanInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj_stubs/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj_stubs/Ship.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj_stubs/ShipTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj_stubs/ShipTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj_stubs/Submarine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj_stubs/Submarine.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,78 +38,82 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
-  <component name="ProjectId" id="2ZBYDYlPkC4w61UC3QigvW8PwV0" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2ZBO88T65U2GUvN9CZVP6EYPHTC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "/Users/gabrielle/Documents/23Fall/CIT5910/BattleShip",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "onboarding.tips.debug.path": "/Users/gabrielle/Documents/23Fall/CIT5910/Battleship/src/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.general",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="ShipTests.testOkToPlaceShipAtBoundary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.OceanTests">
+    <configuration name="OceanTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj_stubs" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ShipTests" />
-      <option name="METHOD_NAME" value="testOkToPlaceShipAtBoundary" />
+      <option name="MAIN_CLASS_NAME" value="OceanTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OceanTests.testCorrectNumberOfShips" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj_stubs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OceanTests" />
+      <option name="METHOD_NAME" value="testCorrectNumberOfShips" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShipTests.testOkToPlaceShipAtEmptyOcean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OceanTests.testGetShotsFired" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj_stubs" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ShipTests" />
-      <option name="METHOD_NAME" value="testOkToPlaceShipAtEmptyOcean" />
+      <option name="MAIN_CLASS_NAME" value="OceanTests" />
+      <option name="METHOD_NAME" value="testGetShotsFired" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShipTests.testOkToPlaceShipNearOtherShip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OceanTests.testIsOccupied" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj_stubs" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ShipTests" />
-      <option name="METHOD_NAME" value="testOkToPlaceShipNearOtherShip" />
+      <option name="MAIN_CLASS_NAME" value="OceanTests" />
+      <option name="METHOD_NAME" value="testIsOccupied" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShipTests.testPlaceShipHorizontally" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OceanTests.testShootAt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj_stubs" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ShipTests" />
-      <option name="METHOD_NAME" value="testPlaceShipHorizontally" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShipTests.testPlaceShipVertically" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="proj_stubs" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ShipTests" />
-      <option name="METHOD_NAME" value="testPlaceShipVertically" />
+      <option name="MAIN_CLASS_NAME" value="OceanTests" />
+      <option name="METHOD_NAME" value="testShootAt" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,46 +121,31 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ShipTests.testPlaceShipVertically" />
-        <item itemvalue="JUnit.ShipTests.testPlaceShipHorizontally" />
-        <item itemvalue="JUnit.ShipTests.testOkToPlaceShipAtBoundary" />
-        <item itemvalue="JUnit.ShipTests.testOkToPlaceShipAtEmptyOcean" />
-        <item itemvalue="JUnit.ShipTests.testOkToPlaceShipNearOtherShip" />
+        <item itemvalue="JUnit.OceanTests" />
+        <item itemvalue="JUnit.OceanTests.testGetShotsFired" />
+        <item itemvalue="JUnit.OceanTests.testShootAt" />
+        <item itemvalue="JUnit.OceanTests.testIsOccupied" />
+        <item itemvalue="JUnit.OceanTests.testCorrectNumberOfShips" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0968bfaf-43e6-41e2-afa0-01fd87e5b00b" name="Changes" comment="" />
-      <created>1701896822888</created>
+      <changelist id="ed803070-3e23-48d4-8c6e-8835c8730c04" name="Changes" comment="" />
+      <created>1701891843974</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1701896822888</updated>
-      <workItem from="1701896825142" duration="17400000" />
+      <updated>1701891843974</updated>
+      <workItem from="1701891845388" duration="622000" />
+      <workItem from="1701895659474" duration="404000" />
+      <workItem from="1701896085284" duration="4591000" />
+      <workItem from="1702089330667" duration="11952000" />
+      <workItem from="1702155388375" duration="7175000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/ShipTests.java</url>
-          <line>50</line>
-          <properties class="ShipTests" method="testOkToPlaceShipAtEmptyOcean">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
-          <option name="timeStamp" value="3" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
