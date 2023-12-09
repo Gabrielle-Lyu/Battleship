@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed803070-3e23-48d4-8c6e-8835c8730c04" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0968bfaf-43e6-41e2-afa0-01fd87e5b00b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,65 +23,125 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="2ZBO88T65U2GUvN9CZVP6EYPHTC" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2ZBYDYlPkC4w61UC3QigvW8PwV0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/gabrielle/Documents/23Fall/CIT5910/BattleShip",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "/Users/gabrielle/Documents/23Fall/CIT5910/Battleship/src/src/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.general",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="BattleshipGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BattleshipGame" />
+    <configuration name="ShipTests.testOkToPlaceShipAtBoundary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj_stubs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ShipTests" />
+      <option name="METHOD_NAME" value="testOkToPlaceShipAtBoundary" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShipTests.testOkToPlaceShipAtEmptyOcean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj_stubs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ShipTests" />
+      <option name="METHOD_NAME" value="testOkToPlaceShipAtEmptyOcean" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShipTests.testOkToPlaceShipNearOtherShip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj_stubs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ShipTests" />
+      <option name="METHOD_NAME" value="testOkToPlaceShipNearOtherShip" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShipTests.testPlaceShipHorizontally" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj_stubs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ShipTests" />
+      <option name="METHOD_NAME" value="testPlaceShipHorizontally" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShipTests.testPlaceShipVertically" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj_stubs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ShipTests" />
+      <option name="METHOD_NAME" value="testPlaceShipVertically" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BattleshipGame" />
+        <item itemvalue="JUnit.ShipTests.testPlaceShipVertically" />
+        <item itemvalue="JUnit.ShipTests.testPlaceShipHorizontally" />
+        <item itemvalue="JUnit.ShipTests.testOkToPlaceShipAtBoundary" />
+        <item itemvalue="JUnit.ShipTests.testOkToPlaceShipAtEmptyOcean" />
+        <item itemvalue="JUnit.ShipTests.testOkToPlaceShipNearOtherShip" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ed803070-3e23-48d4-8c6e-8835c8730c04" name="Changes" comment="" />
-      <created>1701891843974</created>
+      <changelist id="0968bfaf-43e6-41e2-afa0-01fd87e5b00b" name="Changes" comment="" />
+      <created>1701896822888</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1701891843974</updated>
-      <workItem from="1701891845388" duration="622000" />
-      <workItem from="1701895659474" duration="404000" />
-      <workItem from="1701896085284" duration="4591000" />
-      <workItem from="1702089330667" duration="11952000" />
-      <workItem from="1702155388375" duration="85000" />
+      <updated>1701896822888</updated>
+      <workItem from="1701896825142" duration="17400000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/ShipTests.java</url>
+          <line>50</line>
+          <properties class="ShipTests" method="testOkToPlaceShipAtEmptyOcean">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
