@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class BattleshipGame {
     public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
-        boolean playAgain;
         do{
             Ocean ocean = new Ocean();
             ocean.placeAllShipsRandomly();
@@ -12,8 +11,7 @@ public class BattleshipGame {
             ocean.printAnswer();
 //            ------------------------------
             play(ocean, scnr);
-            playAgain = playAgain(scnr);
-        }while(playAgain);
+        }while(playAgain(scnr));
     }
 
     private static int[] getUserShot(Scanner scnr){
@@ -51,7 +49,7 @@ public class BattleshipGame {
     }
 
     private static boolean playAgain(Scanner scnr){
-        System.out.println("Play again? (Y/N)");
-        return scnr.next().equals("Y");
+        System.out.println("Play again? (yes/no)");
+        return scnr.next().equals("yes");
     }
 }
