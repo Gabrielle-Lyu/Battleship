@@ -12,6 +12,7 @@ public abstract class Ship {
 
     abstract String getShipType();
     boolean isHorizontal(){ return horizontal; }
+
     boolean isSunk(){
         for (int i = 0; i < 4; i++){
             if (!hit[i]){
@@ -20,6 +21,9 @@ public abstract class Ship {
         }
         return true;
     }
+
+    boolean[] getHit() { return hit; }
+
     boolean okToPlaceShipAt(int row, int column, boolean horizontal, Ocean ocean){
         if(horizontal){
             if((column + this.length-1)>9){
@@ -92,7 +96,6 @@ public abstract class Ship {
         }
         return false;
     }
-
 
 
 }
