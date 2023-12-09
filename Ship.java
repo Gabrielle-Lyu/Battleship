@@ -5,11 +5,6 @@ public abstract class Ship {
     protected boolean horizontal;
     protected int length;
 
-
-//    Constructor
-//    Ship(){
-//    }
-
     int getBowColumn(){ return bowColumn; };
 
     int getBowRow(){ return bowRow; }

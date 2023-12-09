@@ -1,5 +1,6 @@
 public class BattleshipGame {
     public static void main(String[] args) {
-        System.out.println("haha");
+        Ocean ocean = new Ocean();
+        ocean.print();
     }
 }
