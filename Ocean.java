@@ -162,9 +162,13 @@ public class Ocean implements OceanInterface {
 		if (target instanceof EmptySea) {
 			return false;
 		} else {
+			boolean isSunkBefore = target.isSunk();
 			boolean hit = target.shootAt(row, column);
 			if (hit) {
 				hitCount++;
+				if(!isSunkBefore && target.isSunk()){
+					shipsSunk++;
+				}
 			}
 			return hit;
 		}
@@ -187,9 +191,7 @@ public class Ocean implements OceanInterface {
 	/**
 	 * @return the number of ships sunk in this game.
 	 */
-	public int getShipsSunk() {
-		return this.shipsSunk;
-	}
+	public int getShipsSunk() { return shipsSunk; }
 
 	/**
 	 * @return {@literal true} if all ships have been sunk, otherwise
