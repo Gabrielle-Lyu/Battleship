@@ -89,7 +89,8 @@ public class Ocean implements OceanInterface {
 			int col = rand.nextInt(10);
 			boolean horizontal = rand.nextBoolean();
 
-			if (ships[row][col].okToPlaceShipAt(row, col, horizontal, this)) {
+
+			if (fleet.get(position).okToPlaceShipAt(row, col, horizontal, this)) {
 				fleet.get(position).placeShipAt(row, col, horizontal, this);
 				position++;
 				currentFailCnt = 0;
@@ -275,8 +276,8 @@ public class Ocean implements OceanInterface {
 				} else {
 					System.out.print(ship.getShipType().charAt(0) + " ");
 				}
-				System.out.println();
 			}
+			System.out.println();
 		}
 	}
 }
