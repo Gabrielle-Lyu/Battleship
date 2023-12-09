@@ -33,7 +33,6 @@ public class Ocean implements OceanInterface {
 
 	/**
 	 * The number of ships totally sunk.
-	 * 
 	 */
 	protected int shipsSunk;
 
@@ -60,7 +59,7 @@ public class Ocean implements OceanInterface {
 	 * Place all ten ships randomly on the (initially empty) ocean. Larger ships
 	 * must be placed before smaller ones to avoid cases where it may be impossible
 	 * to place the larger ships.
-	 * 
+	 *
 	 * @see java.util.Random
 	 */
 	public void placeAllShipsRandomly() {
@@ -74,11 +73,11 @@ public class Ocean implements OceanInterface {
 		Random rand = new Random();
 
 //		when there's still ship to be placed in the fleet
-		while(position < fleet.size()){
+		while (position < fleet.size()) {
 
-//			set a breakout point at 50 -> if tried to place a ship for >50 times and still cannot place,
+//			set a breakout point at 30 -> if tried to place a ship for >30 times and still cannot place,
 //			empty the whole map and redo the placement.
-			if(currentFailCnt >= 50) {
+			if (currentFailCnt >= 30) {
 				emptyMap();
 				position = 0;
 				currentFailCnt = 0;
@@ -90,7 +89,7 @@ public class Ocean implements OceanInterface {
 			int col = rand.nextInt(10);
 			boolean horizontal = rand.nextBoolean();
 
-			if(ships[row][col].okToPlaceShipAt(row, col, horizontal, this)){
+			if (ships[row][col].okToPlaceShipAt(row, col, horizontal, this)) {
 				fleet.get(position).placeShipAt(row, col, horizontal, this);
 				position++;
 				currentFailCnt = 0;
@@ -109,12 +108,12 @@ public class Ocean implements OceanInterface {
 		}
 	}
 
-	private void addShipsToFleet(ArrayList<Ship> fleet, Class<? extends Ship> shipType, int number){
-		try{
-			for(int i = 0; i < number; i++){
+	private void addShipsToFleet(ArrayList<Ship> fleet, Class<? extends Ship> shipType, int number) {
+		try {
+			for (int i = 0; i < number; i++) {
 				fleet.add(shipType.getDeclaredConstructor().newInstance());
 			}
-		} catch	(Exception e){
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
@@ -132,15 +131,15 @@ public class Ocean implements OceanInterface {
 	/**
 	 * Checks if this coordinate is not empty; that is, if this coordinate does not
 	 * contain an EmptySea reference.
-	 * 
+	 *
 	 * @param row    the row (0 to 9) in which to check for a floating ship
 	 * @param column the column (0 to 9) in which to check for a floating ship
 	 * @return {@literal true} if the given location contains a ship, and
-	 *         {@literal false} otherwise.
+	 * {@literal false} otherwise.
 	 */
 	public boolean isOccupied(int row, int column) {
 		return !(ships[row][column] instanceof EmptySea);
-    }
+	}
 
 	/**
 	 * Fires a shot at this coordinate. This will update the number of shots that
@@ -148,22 +147,22 @@ public class Ocean implements OceanInterface {
 	 * contains a real, not sunk ship, this method should return {@literal true}
 	 * every time the user shoots at that location. If the ship has been sunk,
 	 * additional shots at this location should return {@literal false}.
-	 * 
+	 *
 	 * @param row    the row (0 to 9) in which to shoot
 	 * @param column the column (0 to 9) in which to shoot
 	 * @return {@literal true} if the given location contains an afloat ship (not an
-	 *         EmptySea), {@literal false} if it does not.
+	 * EmptySea), {@literal false} if it does not.
 	 */
 	public boolean shootAt(int row, int column) {
 		shotsFired++;
 		hasFired[row][column] = true;
 		Ship target = ships[row][column];
 
-		if(target instanceof EmptySea){
+		if (target instanceof EmptySea) {
 			return false;
 		} else {
 			boolean hit = target.shootAt(row, column);
-			if(hit){
+			if (hit) {
 				hitCount++;
 			}
 			return hit;
@@ -193,7 +192,7 @@ public class Ocean implements OceanInterface {
 
 	/**
 	 * @return {@literal true} if all ships have been sunk, otherwise
-	 *         {@literal false}.
+	 * {@literal false}.
 	 */
 	public boolean isGameOver() {
 		return getShipsSunk() == 10;
@@ -205,7 +204,7 @@ public class Ocean implements OceanInterface {
 	 * contents of this array. While it is generally undesirable to allow methods in
 	 * one class to directly access instancce variables in another class, in this
 	 * case there is no clear and elegant alternatives.
-	 * 
+	 *
 	 * @return the 10x10 array of ships.
 	 */
 	public Ship[][] getShipArray() {
@@ -226,11 +225,10 @@ public class Ocean implements OceanInterface {
 	 * <li>'.' (a period) to indicate a location that you have never fired
 	 * upon.</li>
 	 * </ul>
-	 * 
+	 * <p>
 	 * This is the only method in Ocean that has any printing capability, and it
 	 * should never be called from within the Ocean class except for the purposes of
 	 * debugging.
-	 * 
 	 */
 	public void print() {
 //		print column numbers
@@ -243,12 +241,12 @@ public class Ocean implements OceanInterface {
 		System.out.println();
 
 //		print row numbers and rows
-		for (int row = 0; row < ships.length; row++){
+		for (int row = 0; row < ships.length; row++) {
 			System.out.print(row + "  ");
-			for (int col = 0; col < ships[row].length; col++){
-				if(ships[row][col].isSunk()){
+			for (int col = 0; col < ships[row].length; col++) {
+				if (ships[row][col].isSunk()) {
 					System.out.print("x  ");
-				} else if(ships[row][col].shootAt(row, col)){
+				} else if (ships[row][col].shootAt(row, col)) {
 					System.out.print("S  ");
 				} else if (hasFired[row][col]) {
 					System.out.print("-  ");
@@ -257,6 +255,28 @@ public class Ocean implements OceanInterface {
 				}
 			}
 			System.out.println();
+		}
+	}
+
+	//	For testing use, delete afterwards
+	public void printAnswer() {
+		System.out.print("  ");
+		for (int i = 0; i < ships[0].length; i++) {
+			System.out.print(i + " ");
+		}
+		System.out.println();
+
+		for (int row = 0; row < ships.length; row++) {
+			System.out.print(row + " ");
+			for (int col = 0; col < ships[row].length; col++) {
+				Ship ship = ships[row][col];
+				if (ship instanceof EmptySea) {
+					System.out.print(". ");
+				} else {
+					System.out.print(ship.getShipType().charAt(0) + " ");
+				}
+				System.out.println();
+			}
 		}
 	}
 }
