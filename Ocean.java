@@ -247,16 +247,23 @@ public class Ocean implements OceanInterface {
 			for (int col = 0; col < ships[row].length; col++) {
 				if (ships[row][col].isSunk()) {
 					System.out.print("x  ");
-				} else if (ships[row][col].shootAt(row, col)) {
-					System.out.print("S  ");
-				} else if (hasFired[row][col]) {
-					System.out.print("-  ");
 				} else {
-					System.out.print(".  ");
+					// Calculate the index for the hit array
+					int index = ships[row][col].isHorizontal() ? col - ships[row][col].getBowColumn() : row - ships[row][col].getBowRow();
+
+					// Check if the index is within the bounds and the part has been hit
+					if (index >= 0 && index < ships[row][col].getLength() && ships[row][col].getHit()[index]) {
+						System.out.print("S  ");
+					} else if (hasFired[row][col]) {
+						System.out.print("-  ");
+					} else {
+						System.out.print(".  ");
+					}
+					}
 				}
-			}
 			System.out.println();
-		}
+			}
+
 	}
 
 	//	For testing use, delete afterwards
