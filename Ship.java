@@ -15,11 +15,11 @@ public abstract class Ship {
     boolean isSunk(){ return false; }
     boolean okToPlaceShipAt(int row, int column, boolean horizontal, Ocean ocean){
         if(horizontal){
-            if((column + this.length)>9){
+            if((column + this.length-1)>9){
                 return false;
             }
         } else{
-            if((row + this.length)>9){
+            if((row + this.length-1)>9){
                 return false;
             }
         }
@@ -85,5 +85,7 @@ public abstract class Ship {
         }
         return false;
     }
+
+
 
 }
