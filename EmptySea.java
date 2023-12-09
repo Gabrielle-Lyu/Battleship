@@ -1,7 +1,6 @@
 public class EmptySea extends Ship{
 //    Constructor
     EmptySea(){
-
     }
 
     String getShipType(){ return "EmptySea"; }
@@ -10,5 +9,4 @@ public class EmptySea extends Ship{
 
     boolean shootAt(int row, int column){ return false; }
 
-//    String toString(){}
 }
