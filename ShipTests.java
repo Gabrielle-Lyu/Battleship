@@ -1,5 +1,8 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 public class ShipTests {
     private Cruiser cruiser;
@@ -12,9 +15,21 @@ public class ShipTests {
     @BeforeEach
     public void init(){
         battleship = new Battleship();
+        battleship.setBowRow(3);
+        battleship.setBowColumn(4);
+        battleship.setHorizontal(true);
         cruiser = new Cruiser();
+        cruiser.setBowRow(3);
+        cruiser.setBowColumn(4);
+        cruiser.setHorizontal(true);
         submarine = new Submarine();
+        submarine.setBowRow(3);
+        submarine.setBowColumn(4);
+        submarine.setHorizontal(true);
         destroyer = new Destroyer();
+        destroyer.setBowRow(3);
+        destroyer.setBowColumn(4);
+        destroyer.setHorizontal(true);
         ocean = new Ocean();
 
     }
@@ -38,9 +53,6 @@ public class ShipTests {
 
     @Test
     void testGettersAndSetters(){
-        battleship.setBowRow(3);
-        battleship.setBowColumn(4);
-        battleship.setHorizontal(true);
 
         assertEquals(3, battleship.getBowRow(), "Bow row should be 3");
         assertEquals(4, battleship.getBowColumn(), "Bow column should be 4");
@@ -128,6 +140,102 @@ public class ShipTests {
                     "Ship should be placed in the ocean grid at the correct vertical position.");
         }
     }
+
+    @Test
+    void testIsSunkAllPartsHit(){
+        Arrays.fill(battleship.hit, true);
+        assertTrue( battleship.isSunk(),"Ship should be sunk when all parts are hit");
+
+        Arrays.fill(cruiser.hit, true);
+        assertTrue(cruiser.isSunk(),"Ship should be sunk when all parts are hit");
+
+        Arrays.fill(destroyer.hit, true);
+        assertTrue(destroyer.isSunk(),"Ship should be sunk when all parts are hit");
+
+        Arrays.fill(submarine.hit, true);
+        assertTrue(submarine.isSunk(),"Ship should be sunk when all parts are hit");
+
+    }
+
+    @Test
+    void testIsSunkNotAllPartsHit(){
+        Arrays.fill(battleship.hit, true);
+        battleship.hit[0] = false;
+        assertFalse(battleship.isSunk(),"Ship should not be sunk when some parts are not hit");
+
+        Arrays.fill(cruiser.hit, true);
+        cruiser.hit[0] = false;
+        assertFalse(cruiser.isSunk(),"Ship should not be sunk when some parts are not hit");
+
+        Arrays.fill(destroyer.hit, true);
+        destroyer.hit[0] = false;
+        assertFalse(destroyer.isSunk(),"Ship should not be sunk when some parts are not hit");
+
+        Arrays.fill(submarine.hit, true);
+        submarine.hit[0] = false;
+        assertFalse(submarine.isSunk(),"Ship should not be sunk when some parts are not hit");
+    }
+
+    @Test
+
+    void testShootAtHit(){
+        assertTrue(battleship.shootAt(3, 4),"Shoot should be successful");
+        assertTrue(battleship.getHit()[0],"Part of the ship should be hit");
+
+        assertTrue(cruiser.shootAt(3, 4),"Shoot should be successful");
+        assertTrue(cruiser.getHit()[0],"Part of the ship should be hit");
+
+        assertTrue(destroyer.shootAt(3, 4),"Shoot should be successful");
+        assertTrue(destroyer.getHit()[0],"Part of the ship should be hit");
+
+        assertTrue(submarine.shootAt(3, 4),"Shoot should be successful");
+        assertTrue(submarine.getHit()[0],"Part of the ship should be hit");
+    }
+    @Test
+    void testShootAtMiss(){
+        assertFalse(battleship.shootAt(9, 9),"Shoot should miss" );
+        assertFalse(cruiser.shootAt(8, 8),"Shoot should miss" );
+        assertFalse(destroyer.shootAt(7, 7),"Shoot should miss" );
+        assertFalse(submarine.shootAt(6, 6),"Shoot should miss" );
+    }
+
+    @Test
+    void testShootAtWhenSunk() {
+        // Sink the ship first
+        Arrays.fill(battleship.hit, true);
+        assertFalse(battleship.shootAt(3, 4),"Should not be able to shoot at a sunk ship");
+
+        Arrays.fill(cruiser.hit, true);
+        assertFalse(cruiser.shootAt(3, 4),"Should not be able to shoot at a sunk ship");
+
+        Arrays.fill(destroyer.hit, true);
+        assertFalse(destroyer.shootAt(3, 4),"Should not be able to shoot at a sunk ship");
+
+        Arrays.fill(submarine.hit, true);
+        assertFalse(submarine.shootAt(3, 4),"Should not be able to shoot at a sunk ship");
+    }
+
+    @Test
+
+    void testGetHitBefore(){
+        battleship.hit = new boolean[battleship.getLength()];
+        boolean[] hitArray = battleship.getHit();
+        for (boolean hit : hitArray) {
+            assertFalse(hit, "Initially, no part of the ship should be hit");
+        }
+    }
+
+    @Test
+    void testGetHitAfter(){
+        battleship.shootAt(3, 4); // Adjust parameters based on your ship's setup
+        boolean[] hitArray = battleship.getHit();
+        assertTrue(hitArray[0],"The first part of the ship should be hit");
+        // Check the rest of the parts are not hit
+        for (int i = 1; i < hitArray.length; i++) {
+            assertFalse(hitArray[i],"Other parts of the ship should not be hit");
+        }
+    }
+
 
 }
 

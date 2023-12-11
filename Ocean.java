@@ -268,25 +268,4 @@ public class Ocean implements OceanInterface {
 
 	}
 
-	//	For testing use, delete afterwards
-	public void printAnswer() {
-		System.out.print("   ");
-		for (int i = 0; i < ships[0].length; i++) {
-			System.out.print(i + "  ");
-		}
-		System.out.println();
-
-		for (int row = 0; row < ships.length; row++) {
-			System.out.print(row + "  ");
-			for (int col = 0; col < ships[row].length; col++) {
-				Ship ship = ships[row][col];
-				if (ship instanceof EmptySea) {
-					System.out.print(".  ");
-				} else {
-					System.out.print(ship.getShipType().charAt(0) + "  ");
-				}
-			}
-			System.out.println();
-		}
-	}
 }

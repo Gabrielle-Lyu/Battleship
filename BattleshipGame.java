@@ -7,8 +7,8 @@ public class BattleshipGame {
             Ocean ocean = new Ocean();
             ocean.placeAllShipsRandomly();
 //            delete the following section after testing
-            System.out.println("The answer is: ");
-            ocean.printAnswer();
+            // System.out.println("The answer is: ");
+            // ocean.printAnswer();
 //            ------------------------------
             ocean.print();
             play(ocean, scnr);
