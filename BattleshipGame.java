@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class BattleshipGame {
@@ -50,9 +51,15 @@ public class BattleshipGame {
         System.out.println("GAME START");
         while(!ocean.isGameOver()){
             int[] shot = getUserShot(scnr);
+            Ship target = ocean.getShipArray()[shot[0]][shot[1]];
+            boolean sunkPreviously = target.isSunk();
+
             boolean hit = ocean.shootAt(shot[0], shot[1]);
             if(hit){
                 System.out.println("You have HIT the ship. ");
+                if(!sunkPreviously && target.isSunk()){
+                    System.out.println("You just sunk a " + target.getShipType());
+                }
             } else {
                 System.out.println("You MISSED. ");
             }
