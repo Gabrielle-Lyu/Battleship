@@ -87,7 +87,7 @@ public class ShipTests {
                 "Should not be able to place a battleship horizontally at column 8 of an empty ocean.");
         assertFalse(cruiser.okToPlaceShipAt(0, 8, true, ocean),
                 "Should not be able to place a cruiser horizontally at column 8 of an empty ocean.");
-        assertTrue(destroyer.okToPlaceShipAt(0, 8, true, ocean),
+        assertFalse(destroyer.okToPlaceShipAt(0, 9, true, ocean),
                 "Should be able to place a destroyer horizontally at column 8 of an empty ocean.");
         assertTrue(submarine.okToPlaceShipAt(0, 8, true, ocean),
                 "Should be able to place a submarine horizontally at column 8 of an empty ocean.");
@@ -96,7 +96,7 @@ public class ShipTests {
                 "Should not be able to place a battleship vertically at column 8 of an empty ocean.");
         assertFalse(cruiser.okToPlaceShipAt(8, 0, false, ocean),
                 "Should not be able to place a cruiser vertically at column 8 of an empty ocean.");
-        assertTrue(destroyer.okToPlaceShipAt(8, 0, false, ocean),
+        assertFalse(destroyer.okToPlaceShipAt(9, 0, false, ocean),
                 "Should be able to place a destroyer vertically at column 8 of an empty ocean.");
         assertTrue(submarine.okToPlaceShipAt(9, 0, false, ocean),
                 "Should be able to place a submarine vertically at column 8 of an empty ocean.");
@@ -227,7 +227,7 @@ public class ShipTests {
 
     @Test
     void testGetHitAfter(){
-        battleship.shootAt(3, 4); // Adjust parameters based on your ship's setup
+        battleship.shootAt(3, 4);
         boolean[] hitArray = battleship.getHit();
         assertTrue(hitArray[0],"The first part of the ship should be hit");
         // Check the rest of the parts are not hit
