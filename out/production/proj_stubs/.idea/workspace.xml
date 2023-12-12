@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="0968bfaf-43e6-41e2-afa0-01fd87e5b00b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/BattleshipGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/BattleshipGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/proj_stubs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj_stubs/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/proj_stubs/BattleshipGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj_stubs/BattleshipGame.class" afterDir="false" />
+=======
+<<<<<<< HEAD
+    <list default="true" id="0968bfaf-43e6-41e2-afa0-01fd87e5b00b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/ShipTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShipTests.java" afterDir="false" />
+=======
+    <list default="true" id="ed803070-3e23-48d4-8c6e-8835c8730c04" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/BattleshipGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/BattleshipGame.java" afterDir="false" />
+>>>>>>> 3fba734d2524e1b5b3a19b33cbd7e6f26408f2b5
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +45,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "false",
@@ -55,6 +66,69 @@
 }]]></component>
   <component name="RunManager">
     <configuration name="ShipTests.testGetHit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+<<<<<<< HEAD
+  <component name="RunManager" selected="JUnit.ShipTests.testOkToPlaceShipAtBoundary">
+    <configuration name="ShipTests.testGetHit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+  <component name="RunManager" selected="Application.BattleshipGame">
+    <configuration name="BattleshipGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BattleshipGame" />
+      <module name="proj_stubs" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OceanTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj_stubs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OceanTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OceanTests.testGetShipsSunk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj_stubs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OceanTests" />
+      <option name="METHOD_NAME" value="testGetShipsSunk" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OceanTests.testGetShotsFired" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj_stubs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OceanTests" />
+      <option name="METHOD_NAME" value="testGetShotsFired" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShipTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> 3fba734d2524e1b5b3a19b33cbd7e6f26408f2b5
+>>>>>>> Stashed changes
       <module name="proj_stubs" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ShipTests" />
@@ -106,11 +180,25 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
         <item itemvalue="JUnit.ShipTests.testOkToPlaceShipAtBoundary" />
         <item itemvalue="JUnit.ShipTests.testGetHitAfter" />
         <item itemvalue="JUnit.ShipTests.testGetHit" />
         <item itemvalue="JUnit.ShipTests.testIsSunkNotAllPartsHit" />
         <item itemvalue="JUnit.ShipTests.testPlaceShipHorizontally" />
+<<<<<<< Updated upstream
+=======
+=======
+        <item itemvalue="Application.BattleshipGame" />
+        <item itemvalue="JUnit.OceanTests" />
+        <item itemvalue="JUnit.ShipTests" />
+        <item itemvalue="JUnit.OceanTests.testGetShipsSunk" />
+        <item itemvalue="JUnit.OceanTests.testGetShotsFired" />
+>>>>>>> 3fba734d2524e1b5b3a19b33cbd7e6f26408f2b5
+>>>>>>> Stashed changes
       </list>
     </recent_temporary>
   </component>
@@ -121,11 +209,29 @@
       <created>1701896822888</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
       <updated>1701896822888</updated>
       <workItem from="1701896825142" duration="20597000" />
       <workItem from="1702250261481" duration="781000" />
       <workItem from="1702307268525" duration="166000" />
+<<<<<<< Updated upstream
       <workItem from="1702307456934" duration="7078000" />
+=======
+      <workItem from="1702307456934" duration="5275000" />
+=======
+      <updated>1701891843974</updated>
+      <workItem from="1701891845388" duration="622000" />
+      <workItem from="1701895659474" duration="404000" />
+      <workItem from="1701896085284" duration="4591000" />
+      <workItem from="1702089330667" duration="11952000" />
+      <workItem from="1702155388375" duration="8241000" />
+      <workItem from="1702336896714" duration="888000" />
+      <workItem from="1702418007524" duration="772000" />
+>>>>>>> 3fba734d2524e1b5b3a19b33cbd7e6f26408f2b5
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
